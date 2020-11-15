@@ -19,7 +19,7 @@ FRAMES = [
 
 
 def main():
-	return render.Root(
+    return render.Root(
         child=render.Animation(
             children=[render.Image(src=base64.decode(f)) for f in FRAMES]
         )
